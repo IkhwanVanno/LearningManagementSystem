@@ -24,4 +24,8 @@ class ClassRoom extends Model
     {
         return $this->hasMany(Exercise::class, 'class_id');
     }
+    public function status()
+    {
+        return $this->belongsTo(ClassStatus::class, 'status_id');
+    }
 }

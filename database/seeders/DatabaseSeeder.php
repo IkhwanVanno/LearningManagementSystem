@@ -18,7 +18,13 @@ class DatabaseSeeder extends Seeder
             ClassStatusSeeder::class,
             ClassMemberStatusSeeder::class,
             MaterialTypeSeeder::class,
-            UserSeeder::class
+            UserSeeder::class,
+
+            ClassSeeder::class,
+            ClassMemberSeeder::class,
+            MaterialSeeder::class,
+            ExerciseSeeder::class,
+            QuestionSeeder::class
         ]);
     }
 }
