@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Admin Dashboard')
+@section('title', 'Master Data')
 
 @section('content')
-    <h1>Dashboard Admin</h1>
+    <h1>Master Data</h1>
     <p>Konten akan ditampilkan sesuai menu sidebar</p>
 @endsection

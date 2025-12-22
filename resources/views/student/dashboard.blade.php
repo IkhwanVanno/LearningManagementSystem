@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Student</title>
-</head>
+@section('title', 'Student Dashboard')
 
-<body>
-    <form method="POST" action="{{ route('logout') }}">
-        @csrf
-        <button type="submit" class="btn-logout">
-            Logout
-        </button>
-    </form>
-
-</body>
-
-</html>
+@section('content')
+    <h1>Dashboard Student</h1>
+    <p>Konten akan ditampilkan sesuai menu sidebar</p>
+@endsection
