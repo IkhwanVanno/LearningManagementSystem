@@ -1,0 +1,226 @@
+/* ================================
+   CONTAINER & HEADER
+================================ */
+.tugas-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tugas-container .page-header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.tugas-container .page-header .subtitle {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* ================================
+   FILTER & SEARCH
+================================ */
+.tugas-container .filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.tugas-container .filter-form select,
+.tugas-container .search-box input {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.tugas-container .search-box input {
+    min-width: 220px;
+}
+
+/* ================================
+   EXERCISES GRID
+================================ */
+.tugas-container .exercises-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+/* ================================
+   EXERCISE CARD
+================================ */
+.tugas-container .exercise-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tugas-container .exercise-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.tugas-container .exercise-card.completed {
+    border: 2px solid #2ecc71;
+}
+
+/* ================================
+   HEADER
+================================ */
+.tugas-container .exercise-header {
+    padding: 18px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.tugas-container .exercise-header h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.tugas-container .exercise-meta {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tugas-container .question-count {
+    background: #3498db;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ================================
+   BADGE
+================================ */
+.tugas-container .badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.tugas-container .badge-success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.tugas-container .badge-warning {
+    background: #fff3cd;
+    color: #856404;
+}
+
+/* ================================
+   BODY
+================================ */
+.tugas-container .exercise-body {
+    padding: 18px 20px;
+    flex: 1;
+}
+
+.tugas-container .exercise-class {
+    font-size: 13px;
+    color: #6c757d;
+    margin-bottom: 8px;
+}
+
+.tugas-container .exercise-desc {
+    font-size: 14px;
+    color: #495057;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+/* ================================
+   RESULT INFO
+================================ */
+.tugas-container .result-info {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 14px;
+    display: grid;
+    gap: 8px;
+}
+
+.tugas-container .result-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.tugas-container .result-label {
+    color: #6c757d;
+}
+
+.tugas-container .result-value {
+    font-weight: 700;
+}
+
+.tugas-container .score-good {
+    color: #2ecc71;
+}
+
+.tugas-container .score-poor {
+    color: #e74c3c;
+}
+
+/* ================================
+   FOOTER & BUTTON
+================================ */
+.tugas-container .exercise-footer {
+    padding: 16px 20px;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.tugas-container .btn-sm {
+    padding: 8px 16px;
+    font-size: 13px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tugas-container .btn-primary {
+    background: #3498db;
+    color: #fff;
+}
+
+.tugas-container .btn-secondary {
+    background: #ced4da;
+    color: #495057;
+    cursor: not-allowed;
+}
+
+/* ================================
+   EMPTY STATE
+================================ */
+.tugas-container .empty-state {
+    text-align: center;
+    padding: 40px;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* ================================
+   PAGINATION
+================================ */
+.tugas-container .pagination {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+}

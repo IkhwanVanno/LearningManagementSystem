@@ -1,12 +1,10 @@
 <aside class="sidebar">
 
     <div class="sidebar-header">
-        <div class="avatar"></div>
-
-        <div class="role-wrapper">
+        <a href="{{ route('profile.index') }}" class="role-wrapper">
             <img src="{{ asset('images/profile.png') }}" class="role-icon">
             <h3>{{ strtoupper(auth()->user()->name) }}</h3>
-        </div>
+        </a>
     </div>
 
     @if(auth()->user()->role->name === 'admin')

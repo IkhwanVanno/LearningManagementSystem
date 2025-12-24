@@ -1,0 +1,251 @@
+.kerjakan-container {
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.exercise-info-card .card-body {
+    padding: 20px;
+}
+
+.info-row {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.info-item strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.info-item p {
+    margin: 0;
+    color: #6c757d;
+}
+
+.questions-container {
+    margin: 30px 0;
+}
+
+.question-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.question-header {
+    padding: 15px 20px;
+    background: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.question-header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.question-indicator {
+    padding: 5px 12px;
+    background: #fff3cd;
+    color: #856404;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.question-indicator.answered {
+    background: #d4edda;
+    color: #155724;
+}
+
+.question-body {
+    padding: 25px;
+}
+
+.question-text {
+    font-size: 16px;
+    color: #2c3e50;
+    margin: 0 0 20px 0;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.option-label {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.option-label:hover {
+    background: #e9ecef;
+    border-color: #3498db;
+}
+
+.option-label input[type="radio"] {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.option-label input[type="radio"]:checked ~ .option-content {
+    font-weight: 600;
+}
+
+.option-label:has(input[type="radio"]:checked) {
+    background: #e3f2fd;
+    border-color: #3498db;
+}
+
+.option-content {
+    flex: 1;
+    font-size: 15px;
+    color: #2c3e50;
+}
+
+.option-content strong {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+/* Progress */
+.progress-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #495057;
+    font-weight: 600;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+/* Submit Section */
+.submit-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.btn-lg {
+    padding: 15px 40px;
+    font-size: 16px;
+}
+
+/* Modal Confirmations */
+.warning-text {
+    color: #e74c3c;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.result-summary {
+    text-align: center;
+    padding: 20px;
+}
+
+.result-icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.result-score {
+    font-size: 64px;
+    font-weight: bold;
+    color: #2ecc71;
+    margin: 20px 0;
+}
+
+.result-details {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.result-details p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.modal-footer {
+    padding: 20px 25px;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    padding: 20px 25px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .kerjakan-container {
+        padding: 15px;
+    }
+
+    .info-row {
+        grid-template-columns: 1fr;
+    }
+
+    .question-body {
+        padding: 15px;
+    }
+
+    .option-label {
+        padding: 12px;
+    }
+}

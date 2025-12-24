@@ -1,0 +1,218 @@
+/* ================================
+   CONTAINER & HEADER
+================================ */
+.penilaian-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.penilaian-container .page-header {
+    margin-bottom: 10px;
+}
+
+.penilaian-container .page-header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.penilaian-container .page-header .subtitle {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* ================================
+   STATISTICS
+================================ */
+.penilaian-container .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.penilaian-container .stat-card {
+    border-radius: 14px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: #fff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.penilaian-container .stat-icon {
+    font-size: 34px;
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.penilaian-container .stat-content h3 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.penilaian-container .stat-number {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+/* Card Gradients */
+.penilaian-container .card-blue {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.penilaian-container .card-green {
+    background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+.penilaian-container .card-purple {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.penilaian-container .card-orange {
+    background: linear-gradient(135deg, #fa709a, #fee140);
+}
+
+/* ================================
+   CARD & FILTER
+================================ */
+.penilaian-container .card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.penilaian-container .filter-section {
+    max-width: 400px;
+}
+
+.penilaian-container .filter-form label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.penilaian-container .filter-form select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* ================================
+   TABLE
+================================ */
+.penilaian-container .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.penilaian-container .card-header h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.penilaian-container .search-box input {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.penilaian-container .table-responsive {
+    overflow-x: auto;
+}
+
+.penilaian-container .data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.penilaian-container .data-table th,
+.penilaian-container .data-table td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.penilaian-container .data-table th {
+    background: #f8f9fa;
+    font-weight: 700;
+    color: #495057;
+}
+
+.penilaian-container .data-table tbody tr:hover {
+    background: #f9fbff;
+}
+
+/* ================================
+   SCORE & BADGE
+================================ */
+.penilaian-container .score-badge {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.penilaian-container .score-good {
+    background: #d4edda;
+    color: #155724;
+}
+
+.penilaian-container .score-poor {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.penilaian-container .badge-warning {
+    background: #fff3cd;
+    color: #856404;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* ================================
+   BUTTON
+================================ */
+.penilaian-container .btn-icon {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+.penilaian-container .btn-icon:hover {
+    background: #e9ecef;
+}
+
+/* ================================
+   PAGINATION
+================================ */
+.penilaian-container .pagination {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+}

@@ -389,6 +389,9 @@
                     style="color: #e74c3c;"></i> by Your Team</p>
         </div>
     </footer>
+    @push('scripts')
+        @vite('resources/js/welcome.js')
+    @endpush
 </body>
 
 </html>

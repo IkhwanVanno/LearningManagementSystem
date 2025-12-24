@@ -7,29 +7,29 @@
         </a>
     </li>
 
-    <li class="{{ request()->routeIs('admin.users') ? 'active' : '' }}">
-        <a href="{{ route('admin.users') }}">
+    <li class="{{ request()->routeIs('admin.users.index') ? 'active' : '' }}">
+        <a href="{{ route('admin.users.index') }}">
             <img src="{{ asset('images/person.png') }}" class="menu-icon">
             Manajemen User
         </a>
     </li>
 
-    <li class="{{ request()->routeIs('admin.kelas') ? 'active' : '' }}">
-        <a href="{{ route('admin.kelas') }}">
+    <li class="{{ request()->routeIs('admin.kelas.index') ? 'active' : '' }}">
+        <a href="{{ route('admin.kelas.index') }}">
             <img src="{{ asset('images/school.png') }}" class="menu-icon">
             Manajemen Kelas
         </a>
     </li>
 
-    <li class="{{ request()->routeIs('admin.master') ? 'active' : '' }}">
-        <a href="{{ route('admin.master') }}">
+    <li class="{{ request()->routeIs('admin.master.index') ? 'active' : '' }}">
+        <a href="{{ route('admin.master.index') }}">
             <img src="{{ asset('images/datatransfer.png') }}" class="menu-icon">
             Master Data
         </a>
     </li>
 
-    <li class="{{ request()->routeIs('admin.monitoring') ? 'active' : '' }}">
-        <a href="{{ route('admin.monitoring') }}">
+    <li class="{{ request()->routeIs('admin.monitoring.index') ? 'active' : '' }}">
+        <a href="{{ route('admin.monitoring.index') }}">
             <img src="{{ asset('images/monitoring.png') }}" class="menu-icon">
             Pemantauan
         </a>
