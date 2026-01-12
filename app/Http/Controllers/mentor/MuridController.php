@@ -47,11 +47,15 @@ class MuridController extends Controller
             $q->where('mentor_id', $mentorId);
         })->findOrFail($id);
 
-        $validated = $request->validate([
-            'status_id' => 'required|exists:class_member_statuses,id'
+        $request->validate([
+            'status_name' => 'required|in:approved,rejected,pending'
         ]);
 
-        $member->update($validated);
+        $status = ClassMemberStatus::where('name', $request->status_name)->firstOrFail();
+
+        $member->update([
+            'status_id' => $status->id
+        ]);
 
         return response()->json([
             'success' => true,

@@ -231,6 +231,47 @@
     padding: 25px;
 }
 
+/* ===== MODAL BASE ===== */
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none; /* <-- default tersembunyi */
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.modal.show {
+    display: flex; /* <-- baru muncul saat di-show */
+}
+
+.modal-content {
+    background: #fff;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.modal-header {
+    padding: 18px 22px;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-body {
+    padding: 22px;
+}
+
+.modal-footer {
+    padding: 16px 22px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .kerjakan-container {

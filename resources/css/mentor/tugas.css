@@ -41,11 +41,17 @@
     min-width: 200px;
 }
 
+.search-box {
+    width: 100%;
+    height: 100%;
+}
+
 .search-box input {
     padding: 8px 15px;
     border: 1px solid #ddd;
     border-radius: 6px;
-    width: 250px;
+    width: 100%;
+    height: 100%;
     font-size: 14px;
 }
 

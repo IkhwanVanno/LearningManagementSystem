@@ -32,15 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     /* ================= SINGLE ACTIONS ================= */
-
     document.querySelectorAll(".btn-approve").forEach((btn) => {
         btn.addEventListener("click", async () => {
             if (!confirm("Setujui siswa ini?")) return;
 
-            const approvedStatus = await getStatusId("approved");
-            if (!approvedStatus) return;
-
-            await updateMemberStatus(btn.dataset.id, approvedStatus);
+            await updateMemberStatus(btn.dataset.id, "approved");
         });
     });
 
@@ -48,10 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.addEventListener("click", async () => {
             if (!confirm("Tolak siswa ini?")) return;
 
-            const rejectedStatus = await getStatusId("rejected");
-            if (!rejectedStatus) return;
-
-            await updateMemberStatus(btn.dataset.id, rejectedStatus);
+            await updateMemberStatus(btn.dataset.id, "rejected");
         });
     });
 
@@ -145,9 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return statusName;
     }
 
-    async function updateMemberStatus(memberId, statusId) {
-        // Since we're passing status name, we need to find the actual status_id
-        // This is a simplified version - in production, you'd want to pass the actual ID
+    async function updateMemberStatus(memberId, statusName) {
         try {
             const res = await fetch(`/mentor/murid/${memberId}/status`, {
                 method: "PUT",
@@ -158,20 +149,20 @@ document.addEventListener("DOMContentLoaded", () => {
                     "Content-Type": "application/json",
                     Accept: "application/json",
                 },
-                body: JSON.stringify({ status_name: statusId }),
+                body: JSON.stringify({ status_name: statusName }),
             });
 
             const data = await res.json();
 
             if (res.ok) {
                 showAlert(data.message, "success");
-                setTimeout(() => location.reload(), 1000);
+                setTimeout(() => location.reload(), 800);
             } else {
                 showAlert(data.message || "Gagal mengubah status", "error");
             }
-        } catch (error) {
-            console.error("Error:", error);
-            showAlert("Terjadi kesalahan pada server", "error");
+        } catch (e) {
+            console.error(e);
+            showAlert("Terjadi kesalahan server", "error");
         }
     }
 

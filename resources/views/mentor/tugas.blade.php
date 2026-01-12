@@ -17,6 +17,9 @@
 
         <!-- Filter Section -->
         <div class="filter-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Cari tugas...">
+            </div>
             <form method="GET" class="filter-form">
                 <div class="form-group">
                     <select id="class_id" name="class_id" onchange="this.form.submit()">
@@ -29,9 +32,6 @@
                     </select>
                 </div>
             </form>
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Cari tugas...">
-            </div>
         </div>
 
         <!-- Exercises Grid -->
